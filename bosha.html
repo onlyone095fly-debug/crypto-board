@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="120">
+<title>🔄 波差1.0 · 实盘看板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d1117;color:#e6edf3;font-family:'Segoe UI','Microsoft YaHei',sans-serif;font-size:15px;padding:14px;max-width:760px;margin:0 auto}
+h1{font-size:20px}.live{color:#3fb950;font-size:12px;animation:fl 2s infinite}
+@keyframes fl{50%{opacity:.3}}
+.sub{color:#8b949e;font-size:12px;margin:6px 0 14px;line-height:1.6}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:14px;margin-bottom:12px}
+.real{border:2px solid #3fb95044;background:linear-gradient(160deg,#0e2316,#161b22 55%)}
+.eq{font-size:40px;font-weight:800;color:#3fb950;text-shadow:0 0 18px #3fb95033}
+.row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:14px}
+.bar{height:9px;background:#21262d;border-radius:6px;overflow:hidden;margin:10px 0 4px}
+.bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,#3fb950,#58a6ff)}
+h3{font-size:14px;color:#58a6ff;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{padding:5px 6px;text-align:left;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-weight:400;font-size:12px}
+.g{color:#3fb950}.r{color:#f85149}.y{color:#d29922}.dim{color:#8b949e}
+.stream div{padding:5px 2px;border-bottom:1px solid #1c2129;font-size:13px;line-height:1.5}
+.stream .t{color:#8b949e;font-size:11px;margin-right:6px}
+.def{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.def span{background:#10151c;border:1px solid #30363d;border-radius:6px;padding:3px 8px;font-size:12px}
+.foot{color:#8b949e;font-size:11px;text-align:center;margin:14px 0 6px}
+</style></head><body>
+<h1>🔄 波差1.0 <span class="live">●LIVE</span></h1>
+<div class="sub">实盘看板 · 北京时间 2026/9/13 05:08:39<br>纽约(美股) 9/12/2026, 17:08:39 · 每15分钟更新</div>
+
+<div class="card real">
+  <div class="eq">108.35 U</div>
+  <div class="row"><span>今日 <b class="g">+0.21 U</b></span>
+  <span>累计 <b class="r">-8.72 U</b></span></div>
+  <div class="bar"><i style="width:92.6%"></i></div>
+  <div class="row"><span class="dim">雪球进度 92.6%</span><span class="dim">基准 117.07U</span></div>
+</div>
+
+<div class="card">
+  <h3>📊 当前持仓 (5/5)</h3>
+  <table><tr><th>币</th><th>档位</th><th>均本</th><th>持有</th></tr><tr><td><b>AAVE</b></td><td>1档</td><td class="dim">126.3300</td><td class="dim">2.8h</td></tr><tr><td><b>VTHO</b></td><td>1档</td><td class="dim">0.0007</td><td class="dim">0.3h</td></tr><tr><td><b>PUMP</b></td><td>1档</td><td class="dim">0.0038</td><td class="dim">0.3h</td></tr><tr><td><b>WLFI</b></td><td>1档</td><td class="dim">0.0582</td><td class="dim">0.3h</td></tr><tr><td><b>ADA</b></td><td>1档</td><td class="dim">0.2075</td><td class="dim">0.1h</td></tr></table>
+</div>
+
+<div class="card">
+  <h3>🎯 运行状态</h3>
+  <div class="row" style="margin:0"><span>🔄 🔄震荡 空头/动量+0.1% 仓位0.5x 止损5%</span></div>
+  <div class="def">
+    <span>结构 📉空头</span>
+    <span>池上限 5</span>
+    <span>仓位 0.5x</span>
+    <span>止损 5%</span>
+  </div>
+  <div class="def" style="margin-top:8px">
+    <span>🚨 三道防线</span><span>急跌巡检 1min</span><span>结构防线 BOS/CHoCH</span><span>转跌全平</span>
+  </div>
+</div>
+
+<div class="card">
+  <h3>🔔 最近动态</h3>
+  <div class="stream"><div><span class="t">05:00:02</span>✅ 开池 ADA_USDT 首档 6张 (杠杆10x)</div><div><span class="t">04:45:52</span>✅ 开池 WLFI_USDT 首档 21张 (杠杆10x)</div><div><span class="t">04:45:52</span>✅ 开池 PUMP_USDT 首档 3张 (杠杆10x)</div><div><span class="t">04:45:52</span>✅ 开池 VTHO_USDT 首档 188张 (杠杆10x)</div><div><span class="t">04:15:19</span>✅ 开池 LSK_USDT 首档 52张 (杠杆10x)</div><div><span class="t">02:15:54</span>✅ 开池 AAVE_USDT 首档 9张 (杠杆10x)</div><div><span class="t">01:02:51</span>🚨 结构转空(BOS/CHoCH)跌破前低，主动清仓 5 个多单（不等止损）</div><div><span class="t">01:02:51</span>🚨 结构转空(BOS/CHoCH)：BTC 1h 跌破前低 @77325 → 主动全平（结构防线，早于Regime）</div></div>
+</div>
+
+<div class="foot">🔄 波差1.0 V1.13 · Gate 永续 10x · 数据仅供研究，盈亏自负</div>
+</body></html>
