@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="120">
-<title>🔄 波差1.0 · 实盘看板</title>
+<title>🐉 波差 · 聚合看板</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0d1117;color:#e6edf3;font-family:'Segoe UI','Microsoft YaHei',sans-serif;font-size:14px;padding:12px}
@@ -9,83 +9,92 @@ h1{font-size:20px}.live{color:#3fb950;font-size:12px;animation:fl 2s infinite}
 @keyframes fl{50%{opacity:.35}}
 .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
 .tbar{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:7px 12px;font-size:12.5px;color:#c9d1d9;margin:10px 0}
-.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:14px;margin-bottom:12px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:13px;margin-bottom:12px}
 .real{border:2px solid #3fb95044;background:linear-gradient(160deg,#0e2316,#161b22 55%);box-shadow:0 0 28px #3fb95012}
-.eq{font-size:42px;font-weight:800;color:#3fb950;text-shadow:0 0 20px #3fb95033;line-height:1.1}
-.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px;margin-top:10px;font-size:13px}
+.eq{font-size:40px;font-weight:800;color:#3fb950;text-shadow:0 0 20px #3fb95033;line-height:1.1}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:6px;margin-top:9px;font-size:13px}
 .stat div{background:#10151c;border-radius:6px;padding:5px 8px}
 .stat b{font-size:15px}
-.bar{height:10px;background:#21262d;border-radius:6px;overflow:hidden;margin:10px 0 4px}
-.bar i{display:block;height:100%;border-radius:6px;transition:width .4s}
+.bar{height:10px;background:#21262d;border-radius:6px;overflow:hidden;margin:9px 0 4px}
+.bar i{display:block;height:100%;border-radius:6px}
 .grn{background:#3fb950}.yel{background:#d29922}.red{background:#f85149}
 .cols{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:900px){.cols{grid-template-columns:1.15fr .85fr}}
+@media(min-width:920px){.cols{grid-template-columns:1.1fr .9fr}}
 h3{font-size:14px;color:#58a6ff;margin-bottom:8px;letter-spacing:.4px}
+h3 .dim{font-size:11.5px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-td,th{padding:4px 6px;text-align:left;border-bottom:1px solid #21262d;white-space:nowrap}
+td,th{padding:4px 6px;text-align:left;border-bottom:1px solid #21262d}
 th{color:#8b949e;font-weight:400;font-size:11.5px}
 .g{color:#3fb950}.r{color:#f85149}.y{color:#d29922}.dim{color:#8b949e}
-.scroll{max-height:420px;overflow-y:auto}
+.scroll{max-height:340px;overflow-y:auto}
 .stream div{padding:4px 2px;border-bottom:1px solid #1c2129;font-size:12.5px;line-height:1.5}
 .stream .t{color:#8b949e;font-size:11px;margin-right:6px}
 .def{display:flex;gap:6px;flex-wrap:wrap}
 .def span{background:#10151c;border:1px solid #30363d;border-radius:6px;padding:3px 8px;font-size:12px}
 .foot{color:#8b949e;font-size:11px;text-align:center;margin:12px 0 4px}
 </style></head><body>
-<div class="top"><h1>🔄 波差1.0 · 实盘看板 <span class="live">●LIVE</span></h1><span class="dim" style="font-size:12px">更新 5:18:02</span></div>
-<div class="tbar">🇨🇳 北京时间 <b>2026/9/13 05:18:02</b> ｜ 🇺🇸 纽约(美股) 9/12/2026, 17:18:02</div>
+<div class="top"><h1>🐉 波差 · 聚合看板 <span class="live">●LIVE</span></h1><span class="dim" style="font-size:12px">更新 5:20:05</span></div>
+<div class="tbar">🇨🇳 北京时间 <b>2026/9/13 05:20:05</b> ｜ 🇺🇸 纽约 9/12/2026, 17:20:05</div>
 
 <div class="cols">
 <div>
   <div class="card real">
-    <div class="dim" style="font-size:12px;margin-bottom:4px">💰 实盘 · Gate 永续 · 真金白银</div>
-    <div class="eq">108.23<span style="font-size:20px">U</span></div>
-    <div class="dim" style="font-size:12px;margin-top:2px">持仓 5 仓 · 名义敞口 59.94U（真实杠杆 0.55x）</div>
+    <div class="dim" style="font-size:12px;margin-bottom:4px">💰 实盘 · 波差1.0 · Gate 永续</div>
+    <div class="eq">108.23<span style="font-size:19px">U</span></div>
+    <div class="dim" style="font-size:12px;margin-top:2px">持仓 5 仓 · 名义敞口 59.96U（真实杠杆 0.55x）</div>
     <div class="stat">
-      <div>可用 <b>107.03U</b></div>
-      <div>名义敞口 <b>59.94U</b></div>
+      <div>可用 <b>107.04U</b></div>
       <div>浮盈 <b class="r">-0.12U</b></div>
       <div>今日 <b class="g">+0.09U</b></div>
       <div>累计 <b class="r">-8.84U</b></div>
-      <div>状态 <b>🟢 正常</b></div>
     </div>
     <div class="bar"><i class="g" style="width:27.7%"></i></div>
-    <div class="dim" style="font-size:11.5px">雪球进度 92.5%（基准 117.07U）｜ 持仓累计已实现 -0.03U</div>
+    <div class="dim" style="font-size:11.5px">雪球进度 92.5%（基准 117.07U）｜ 名义占用 28%/200%</div>
   </div>
 
   <div class="card">
-    <h3>📊 持仓明细（5 仓）— 档位·均价·现价·浮盈</h3>
-    <div class="scroll"><table>
-      <tr><th>币</th><th>档</th><th>均价</th><th>现价</th><th>浮盈</th><th>幅度</th></tr>
-      <tr><td><b>VTHO</b><span class="dim"> 多</span></td><td>1档</td><td class="dim">0.000666</td><td class="dim">0.000661</td><td class="r">-0.08</td><td class="r">-0.7%</td></tr><tr><td><b>AAVE</b><span class="dim"> 多</span></td><td>1档</td><td class="dim">126.3500</td><td class="dim">125.7700</td><td class="r">-0.05</td><td class="r">-0.5%</td></tr><tr><td><b>PUMP</b><span class="dim"> 多</span></td><td>1档</td><td class="dim">0.003843</td><td class="dim">0.003835</td><td class="r">-0.02</td><td class="r">-0.2%</td></tr><tr><td><b>ADA</b><span class="dim"> 多</span></td><td>1档</td><td class="dim">0.207600</td><td class="dim">0.207300</td><td class="r">-0.02</td><td class="r">-0.1%</td></tr><tr><td><b>WLFI</b><span class="dim"> 多</span></td><td>1档</td><td class="dim">0.058150</td><td class="dim">0.058340</td><td class="g">+0.04</td><td class="g">+0.3%</td></tr>
-    </table></div>
+    <h3>📊 持仓明细（5）</h3>
+    <div class="scroll"><table><tr><th>币</th><th>档</th><th>均价</th><th>现价</th><th>浮盈</th><th>幅度</th></tr><tr><td><b>VTHO</b> <span class="dim">多</span></td><td>1档</td><td class="dim">0.000666</td><td class="dim">0.000662</td><td class="r">-0.06</td><td class="r">-0.5%</td></tr><tr><td><b>AAVE</b> <span class="dim">多</span></td><td>1档</td><td class="dim">126.3500</td><td class="dim">125.7000</td><td class="r">-0.06</td><td class="r">-0.5%</td></tr><tr><td><b>ADA</b> <span class="dim">多</span></td><td>1档</td><td class="dim">0.207600</td><td class="dim">0.207200</td><td class="r">-0.02</td><td class="r">-0.2%</td></tr><tr><td><b>PUMP</b> <span class="dim">多</span></td><td>1档</td><td class="dim">0.003843</td><td class="dim">0.003841</td><td class="r">-0.01</td><td class="r">-0.1%</td></tr><tr><td><b>WLFI</b> <span class="dim">多</span></td><td>1档</td><td class="dim">0.058150</td><td class="dim">0.058310</td><td class="g">+0.03</td><td class="g">+0.3%</td></tr></table></div>
+  </div>
+
+  <div class="card">
+    <h3>🎯 运行状态</h3>
+    <div style="font-size:13px;margin-bottom:7px">🔄 🔄震荡 空头/动量+0.1% 仓位0.5x 止损5%</div>
+    <div class="def"><span>结构 📉空头</span><span>池 5/5</span><span>仓位 0.5x</span><span>止损 5%</span></div>
+    <div class="def" style="margin-top:6px"><span>🚨急跌1min</span><span>🚨结构防线</span><span>🚨转跌全平</span></div>
+  </div>
+
+  <div class="card">
+    <h3>⚡ 操作流</h3>
+    <div class="stream scroll"><div><span class="t">05:00</span>✅ 开池 ADA_USDT 首档 6张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 WLFI_USDT 首档 21张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 PUMP_USDT 首档 3张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 VTHO_USDT 首档 188张 (杠杆10x)</div><div><span class="t">04:15</span>✅ 开池 LSK_USDT 首档 52张 (杠杆10x)</div><div><span class="t">02:15</span>✅ 开池 AAVE_USDT 首档 9张 (杠杆10x)</div><div><span class="t">01:02</span>🚨 结构转空(BOS/CHoCH)跌破前低，主动清仓 5 个多单（不等止损）</div><div><span class="t">01:02</span>🚨 结构转空(BOS/CHoCH)：BTC 1h 跌破前低 @77325 → 主动全平</div><div><span class="t">23:15</span>✅ 开池 BTC_USDT 首档 1张 (杠杆10x)</div></div>
   </div>
 </div>
 
 <div>
   <div class="card">
-    <h3>🎯 运行状态</h3>
-    <div style="font-size:13px;margin-bottom:8px">🔄 🔄震荡 空头/动量+0.1% 仓位0.5x 止损5%</div>
-    <div class="def">
-      <span>结构 📉空头</span><span>池 5/5</span>
-      <span>仓位 0.5x</span><span>止损 5%</span>
+    <h3>👁 TOP跟单 <span class="dim">· 熬鹰 · 100U实盘</span></h3>
+    <div class="stat" style="margin-top:0">
+      <div>权益 <b>91.17U</b></div>
+      <div>今日 <b class="g">+1.25U</b></div>
+      <div>已实现 <b class="g">+0.00U</b></div>
+      <div>手续费 <b class="dim">0.80U</b></div>
     </div>
-    <div class="def" style="margin-top:6px">
-      <span>🚨 急跌巡检 1min</span><span>🚨 结构防线 BOS/CHoCH</span><span>🚨 转跌全平</span>
-    </div>
+    <div style="margin-top:8px"><table><tr><th>币</th><th>他持仓</th><th>我跟单均价</th><th>名义</th></tr><tr><td><b>ETH</b> <span class="dim">空</span></td><td class="dim">573</td><td class="dim">2604.8800</td><td class="dim">26.05U</td></tr></table></div>
+    <div class="dim" style="font-size:11.5px;margin-top:6px">最后同步 2026-09-12 21:59 ｜🟢 运行中</div>
   </div>
 
   <div class="card">
-    <h3>⚡ 操作流（实时）</h3>
-    <div class="stream scroll"><div><span class="t">05:00</span>✅ 开池 ADA_USDT 首档 6张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 WLFI_USDT 首档 21张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 PUMP_USDT 首档 3张 (杠杆10x)</div><div><span class="t">04:45</span>✅ 开池 VTHO_USDT 首档 188张 (杠杆10x)</div><div><span class="t">04:15</span>✅ 开池 LSK_USDT 首档 52张 (杠杆10x)</div><div><span class="t">02:15</span>✅ 开池 AAVE_USDT 首档 9张 (杠杆10x)</div><div><span class="t">01:02</span>🚨 结构转空(BOS/CHoCH)跌破前低，主动清仓 5 个多单（不等止损）</div><div><span class="t">01:02</span>🚨 结构转空(BOS/CHoCH)：BTC 1h 跌破前低 @77325 → 主动全平（结…</div><div><span class="t">23:15</span>✅ 开池 BTC_USDT 首档 1张 (杠杆10x)</div></div>
+    <h3>📊 模拟盘 <span class="dim">· 低吸高抛 v3</span></h3>
+    <table><tr><th>标的</th><th>权益</th><th>档位</th><th>盘面</th><th>趋势</th></tr><tr><td><b>SOL</b></td><td>700.00U</td><td>0档</td><td class="dim">回撤5.3%</td><td><span class="r">MA200下</span></td></tr><tr><td><b>BNB</b></td><td>300.00U</td><td>0档</td><td class="dim">回撤5.8%</td><td><span class="g">MA200上</span></td></tr></table>
+    <div class="dim" style="font-size:11.5px;margin-top:6px">合计 1000.00U ｜ 更新 2026-09-12T21:05</div>
   </div>
 
   <div class="card">
-    <h3>🔥 白名单 24h 涨幅榜</h3>
-    <div class="scroll"><table><tr><th>币</th><th>价格</th><th>24h</th></tr><tr><td><b>LSK</b></td><td class="dim">0.232600</td><td class="g">+72.7%</td></tr><tr><td><b>VTHO</b></td><td class="dim">0.000662</td><td class="g">+15.5%</td></tr><tr><td><b>WLFI</b></td><td class="dim">0.058340</td><td class="g">+6.9%</td></tr><tr><td><b>PUMP</b></td><td class="dim">0.003835</td><td class="g">+6.7%</td></tr><tr><td><b>UNI</b></td><td class="dim">6.3380</td><td class="g">+4.2%</td></tr><tr><td><b>PEPE</b></td><td class="dim">0.000003</td><td class="g">+3.1%</td></tr><tr><td><b>INJ</b></td><td class="dim">6.0210</td><td class="g">+1.9%</td></tr><tr><td><b>DOGE</b></td><td class="dim">0.084770</td><td class="g">+0.3%</td></tr><tr><td><b>ADA</b></td><td class="dim">0.207400</td><td class="g">+0.2%</td></tr><tr><td><b>TRUMP</b></td><td class="dim">1.9940</td><td class="g">+0.1%</td></tr><tr><td><b>AAVE</b></td><td class="dim">125.7500</td><td class="g">+0.1%</td></tr><tr><td><b>BNB</b></td><td class="dim">726.3500</td><td class="r">-0.1%</td></tr></table></div>
+    <h3>🏛 宏观事件 <span class="dim">· 未来高影响</span></h3>
+    <div class="scroll"><table><tr><th>事件</th><th>地区</th><th>北京时间</th><th>倒计时</th></tr><tr><td colspan="4" class="dim">日历加载失败</td></tr></table></div>
   </div>
 </div>
 </div>
 
-<div class="foot">🔄 波差1.0 V1.13 · Gate 永续 10x · 每15分钟更新 · 数据仅供研究，盈亏自负</div>
+<div class="foot">🐉 波差聚合看板 · V1.13 · 每15分钟更新 · 数据仅供研究，盈亏自负</div>
 </body></html>
